@@ -1,0 +1,14 @@
+name: task4
+on:
+  push:
+    path:
+    - aura/**
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: aura formation
+        run: echo "successfully aura formed"
